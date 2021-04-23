@@ -1,13 +1,12 @@
-basicAlphabet = "abcdefghijklmnopqrstuvwxyz"
+basicAlphabet = "abcdefghijklmnopqrstuvwxyz" \
+                "abcdefghijklmnopqrstuvwxyz"
 newString = ""
-i=0
-sumChanged =12
+sumChanged = 37
 oriText = input("Original Text: ")
-print ("Ori text: ",oriText)
-while i <= len(oriText)-1:
-  if not oriText[i].isalpha() and not oriText[i].isdigit():
-    newString += oriText[i]
-  else:
-    newString += basicAlphabet[basicAlphabet.index(oriText[i]+sumChanged]
-  i+=1
-print ("newstring :",newString)
+print("Ori text: ", oriText)
+for i in range(len(oriText)):
+    if not oriText[i].isalpha():
+        newString += oriText[i]
+    else:
+        newString = newString + basicAlphabet[basicAlphabet.index(oriText[i]) + sumChanged]
+print("newstring :", newString)
