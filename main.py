@@ -16,6 +16,18 @@ newString = ""
 originalText = input("\nMasukkan kalimat yang ingin anda ubah : ")
 print("Kalimat asli: ", originalText)
 
+#function enkripsi
+def encryptText (oriText,basicAlphabet,newString, sumChanged):
+    for i in range(len(oriText)):
+        if not oriText[i].isalpha():
+            newString += oriText[i]
+        elif oriText[i].isupper():
+            newString = newString + basicAlphabet[basicAlphabet.index(oriText[i].lower()) + sumChanged].upper()
+        else:
+            newString = newString + basicAlphabet[basicAlphabet.index(oriText[i]) + sumChanged]
+    print("\nKalimat kamu berhasil di enkripsikan menjadi:", newString)
+
+
 choice = str(input("1. Enkripsi \n2. Dekripsi \nMasukan pilihan kamu : "))
 if choice == "Enkripsi" or choice == "1":
     sumChanged = 37
