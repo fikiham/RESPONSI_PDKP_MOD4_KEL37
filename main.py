@@ -13,10 +13,10 @@ basicAlphabet = "abcdefghijklmnopqrstuvwxyz" \
 
 newString = ""
 
-originalText = input("\nOriginal Text: ")
-print("Ori text: ", originalText)
+originalText = input("\nMasukkan nama anda : ")
+print("Nama asli: ", originalText)
 
-choice = str(input("1. Encrypt \n2. Decrypt \nMasukan pilihan kamu:"))
+choice = str(input("1. Encrypt \n2. Decrypt \nMasukan pilihan kamu : "))
 if choice == "Encrypt" or choice == "1":
     sumChanged = 37
     encryptText(originalText, basicAlphabet, newString, sumChanged)
@@ -24,4 +24,4 @@ elif choice == "Decrypt" or choice == "2":
     sumChanged = -37
     decrpytText(originalText, basicAlphabet, newString, sumChanged)
 else:
-    print("Your choice sucks, restart the program")
+    print("Pilihan yang anda masukkan tidak tersedia. Mohon ulang program.")
