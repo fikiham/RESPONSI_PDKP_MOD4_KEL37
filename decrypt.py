@@ -13,6 +13,7 @@ class nama:
         nama.nama4 = nama4
     def anggota(nama):
         print(f"Anggota 1 = {nama.nama1}\nAnggota 2 = {nama.nama2}\nAnggota 3 = {nama.nama3}\nAnggota 4 = {nama.nama4}")
+        print("\n————————————Responsi Modul 4————————————")
 
 def decrpytText(oriText,basicAlphabet,newString, sumChanged):
     for i in range(len(oriText)):
@@ -22,7 +23,7 @@ def decrpytText(oriText,basicAlphabet,newString, sumChanged):
             newString = newString + basicAlphabet[basicAlphabet.index(oriText[i].lower()) + sumChanged].upper()
         else:
             newString = newString + basicAlphabet[basicAlphabet.index(oriText[i]) + sumChanged]
-    print("Newstring :", newString)
+    print("\nKalimat kamu berhasil di dekripsikan menjadi:", newString)
 
 def encryptText (oriText,basicAlphabet,newString, sumChanged):
     for i in range(len(oriText)):
@@ -32,4 +33,4 @@ def encryptText (oriText,basicAlphabet,newString, sumChanged):
             newString = newString + basicAlphabet[basicAlphabet.index(oriText[i].lower()) + sumChanged].upper()
         else:
             newString = newString + basicAlphabet[basicAlphabet.index(oriText[i]) + sumChanged]
-    print("Newstring :", newString)
+    print("\nKalimat kamu berhasil di enkripsikan menjadi:", newString)

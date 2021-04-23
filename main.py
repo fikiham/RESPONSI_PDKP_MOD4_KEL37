@@ -13,14 +13,14 @@ basicAlphabet = "abcdefghijklmnopqrstuvwxyz" \
 
 newString = ""
 
-originalText = input("\nMasukkan nama anda : ")
-print("Nama asli: ", originalText)
+originalText = input("\nMasukkan kalimat yang ingin anda ubah : ")
+print("Kalimat asli: ", originalText)
 
-choice = str(input("1. Encrypt \n2. Decrypt \nMasukan pilihan kamu : "))
-if choice == "Encrypt" or choice == "1":
+choice = str(input("1. Enkripsi \n2. Dekripsi \nMasukan pilihan kamu : "))
+if choice == "Enkripsi" or choice == "1":
     sumChanged = 37
     encryptText(originalText, basicAlphabet, newString, sumChanged)
-elif choice == "Decrypt" or choice == "2":
+elif choice == "Dekripsi" or choice == "2":
     sumChanged = -37
     decrpytText(originalText, basicAlphabet, newString, sumChanged)
 else:
